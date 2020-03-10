@@ -4,6 +4,8 @@ window.addEventListener('load', function () {
     var ar = document.querySelector('.ar');
     var jd_clo2_l = document.querySelector('.jd_clo2-l');
     var tWidth = jd_clo2_l.offsetWidth;
+    var close = document.querySelector('.ofclose');
+    var Jevent = document.querySelector('.J-event');
 
 
     // 2.鼠标经过显示按钮
@@ -104,4 +106,8 @@ window.addEventListener('load', function () {
     var timer = setInterval(function () {
         ar.click();
     }, 2000)
+    // 关闭广告
+    close.addEventListener('click', function () {
+        Jevent.style.display = 'none'
+    })
 })
